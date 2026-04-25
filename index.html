@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Soares | Baixo, Guitarra e Aulas</title>
+  <meta
+    name="description"
+    content="Website de apresentação de João Soares, músico e professor de baixo e guitarra, com foco em serviços, repertório e presença social."
+  />
+  <meta property="og:title" content="João Soares | Baixo, Guitarra e Aulas" />
+  <meta
+    property="og:description"
+    content="Uma landing page editorial para apresentar as aulas, a identidade musical e o conteúdo social de João Soares."
+  />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f4eee6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Ir para o topo">
+        <span class="brand__serif">João</span>
+        <span class="brand__sans">Soares</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-panel"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu-panel" id="menu-panel">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#musicas">Músicas</a>
+        <a href="#instagram">Instagram</a>
+        <a class="button button--small" href="#contacto">Marcar aula</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Apresentação de João Soares">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-media__video" autoplay muted loop playsinline preload="auto" poster="assets/joao-bass.png">
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-media__scrim"></div>
+        <div class="hero-media__wash"></div>
+        <div class="hero-media__scan"></div>
+      </div>
+      <svg class="hero-contour hero-contour--left" viewBox="0 0 620 620" aria-hidden="true">
+        <path d="M32 184C43 97 128 29 236 22c80-5 166 25 245 21 71-4 121-17 107 55-15 77-103 96-109 170-5 62 48 120 23 183-34 88-161 110-262 100-97-9-197-44-228-118-23-55 18-109 34-161 19-62-18-113-10-174Z" />
+      </svg>
+      <svg class="hero-contour hero-contour--right" viewBox="0 0 660 660" aria-hidden="true">
+        <path d="M623 231c-9 81-73 155-145 195-71 40-150 51-225 89-76 39-147 107-208 67-67-43-69-154-15-230 42-58 116-89 177-128 77-48 146-114 234-122 100-9 194 46 182 129Z" />
+      </svg>
+
+      <div class="container hero__grid">
+        <aside class="hero-card reveal reveal--delay-1">
+          <p class="eyebrow">Aulas 1:1</p>
+          <div class="hero-card__divider"></div>
+          <strong>Baixo &amp; Guitarra</strong>
+          <span>Técnica, groove, repertório e identidade musical.</span>
+        </aside>
+
+        <div class="hero-copy reveal" id="hero-copy">
+          <p class="eyebrow hero-eyebrow">Músico · Professor · Performance</p>
+          <h1 class="hero-title">
+            <span class="hero-title__line hero-title__line--top">JOÃO</span>
+            <span class="hero-title__line hero-title__line--bottom">Soares</span>
+          </h1>
+          <p class="hero-copy__lead">
+            Baixo e guitarra com presença, musicalidade e aulas pensadas para quem quer tocar com mais confiança e personalidade.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button--primary" href="#servicos">Ver serviços</a>
+            <a class="button button--ghost" href="#musicas">Explorar músicas</a>
+          </div>
+
+          <ul class="hero-bullets" aria-label="Destaques">
+            <li>Vídeo autoplay para dar uma entrada mais cinematográfica e imediata</li>
+            <li>Parallax no scroll, luz ambiente e micro-interação ao mover o rato</li>
+            <li>Tipografia reajustada para evitar sobreposição e ganhar presença</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal reveal--delay-2" id="hero-stage">
+          <div class="hero-stage__glow" aria-hidden="true"></div>
+          <div class="hero-stage__halo" aria-hidden="true"></div>
+          <div class="hero-stage__beam" aria-hidden="true"></div>
+          <div class="hero-stage__frame">
+            <video class="hero-stage__video" autoplay muted loop playsinline preload="auto" poster="assets/joao-bass.png">
+              <source src="assets/hero-video.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-stage__overlay" aria-hidden="true"></div>
+            <div class="hero-stage__meta">
+              <span class="hero-stage__meta-kicker">Live visual</span>
+              <strong>Hero cinematográfica com movimento contínuo</strong>
+            </div>
+          </div>
+          <div class="hero-stage__label" aria-hidden="true">
+            <span>Autoplay video</span>
+            <span>Scroll reactive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll__line"></div>
+      </div>
+    </section>
+
+    <section class="story section" id="sobre">
+      <div class="container story__grid">
+        <div class="story__portrait reveal">
+          <div class="story__image-shell">
+            <img
+              src="assets/joao-portrait.png"
+              alt="Retrato de João Soares num ambiente de estúdio com iluminação rosa e azul."
+            />
+          </div>
+        </div>
+
+        <div class="story__copy reveal reveal--delay-1">
+          <p class="eyebrow">Sobre o João</p>
+          <h2>Som com assinatura própria e ensino ligado à prática.</h2>
+          <p>
+            Esta landing page foi pensada para mostrar o lado performer e o lado professor numa só narrativa:
+            intensidade visual, groove, clareza e uma presença forte logo no primeiro ecrã.
+          </p>
+          <p>
+            A linguagem visual parte do site de referência, mas muda o universo: menos motorsport, mais palco,
+            cor, contraste e energia musical.
+          </p>
+
+          <div class="quote-block">
+            <p>
+              “Entre o palco e a aula, a ideia é sempre a mesma: tocar com intenção, ouvir com atenção e construir identidade.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Serviços</p>
+          <h2>Uma presença online que vende o músico e o professor ao mesmo tempo.</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <span class="service-card__index">01</span>
+            <h3>Aulas de baixo</h3>
+            <p>
+              Sessões centradas em groove, técnica, leitura do instrumento, timbre e aplicação em música real.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-1">
+            <span class="service-card__index">02</span>
+            <h3>Aulas de guitarra</h3>
+            <p>
+              Trabalho de repertório, ritmo, expressão, construção de som e segurança para tocar com mais fluidez.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-2">
+            <span class="service-card__index">03</span>
+            <h3>Performance &amp; conteúdo</h3>
+            <p>
+              Um site pronto para apresentar serviços, mostrar identidade visual e ligar a música às redes sociais.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="music section section--dark" id="musicas">
+      <div class="container music__grid">
+        <div class="music__intro reveal">
+          <p class="eyebrow">Músicas</p>
+          <h2>Zona preparada para destacar originais, vídeos e repertório em evidência.</h2>
+          <p>
+            A secção foi desenhada para receber facilmente links de Spotify, YouTube, SoundCloud ou um player embutido,
+            mantendo o mesmo impacto visual da hero.
+          </p>
+        </div>
+
+        <div class="music-showcase reveal reveal--delay-1">
+          <article class="music-feature">
+            <div class="music-feature__art">
+              <img src="assets/joao-bass.png" alt="João Soares com baixo elétrico." />
+            </div>
+            <div class="music-feature__content">
+              <span class="music-feature__tag">Now framing</span>
+              <h3>Originais, grooves e sessões ao vivo</h3>
+              <p>
+                Ideal para criar destaque imediato para lançamentos, vídeos curtos, performances de estúdio e faixas em rotação.
+              </p>
+            </div>
+          </article>
+
+          <div class="playlist-panel">
+            <div class="playlist-row">
+              <span>01</span>
+              <div>
+                <strong>Faixas em destaque</strong>
+                <p>Espaço para mostrar singles, grooves ou temas principais.</p>
+              </div>
+            </div>
+            <div class="playlist-row">
+              <span>02</span>
+              <div>
+                <strong>Vídeos &amp; sessões</strong>
+                <p>Área preparada para integrar live sessions e clips curtos.</p>
+              </div>
+            </div>
+            <div class="playlist-row">
+              <span>03</span>
+              <div>
+                <strong>Repertório para aulas</strong>
+                <p>Boa zona para apresentar metodologia, exercícios ou temas estudados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social section" id="instagram">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Instagram</p>
+          <h2>Feed visual pronto para receber o perfil oficial e os conteúdos do João.</h2>
+        </div>
+
+        <div class="social__grid">
+          <article class="social-card social-card--image reveal">
+            <img src="assets/joao-bass.png" alt="Preview visual com João Soares no baixo." />
+            <div class="social-card__overlay">
+              <span>Reels</span>
+              <strong>Performance</strong>
+            </div>
+          </article>
+
+          <article class="social-card social-card--text reveal reveal--delay-1">
+            <span>Backstage</span>
+            <strong>Ensaios, aulas e bastidores</strong>
+            <p>Uma grelha pensada para misturar conteúdo educativo com presença artística.</p>
+          </article>
+
+          <article class="social-card social-card--text reveal reveal--delay-2">
+            <span>Conteúdo</span>
+            <strong>Clips, tips e lançamentos</strong>
+            <p>Estrutura fácil de adaptar quando o handle oficial e os embeds forem adicionados.</p>
+          </article>
+
+          <article class="social-card social-card--image reveal reveal--delay-3">
+            <img src="assets/joao-portrait.png" alt="Preview visual com retrato de João Soares." />
+            <div class="social-card__overlay">
+              <span>Imagem</span>
+              <strong>Identidade</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">Próximo passo</p>
+            <h2>Pronto para apresentar aulas, música e presença online numa página só.</h2>
+          </div>
+
+          <div class="contact-panel__actions">
+            <a class="button button--primary" href="#top">Voltar ao topo</a>
+            <a class="button button--ghost" href="#instagram">Ver social</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
